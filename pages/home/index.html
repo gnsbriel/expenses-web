@@ -32,8 +32,8 @@
             </header>
             <main id="main-home">
                 <div>
-                    <select name="Month" id="selectMonth">
-                        <option value="select">select</option>
+                    <select id="selectMonth" name="Month" >
+                        <option value="select">Select</option>
                         <option value="Jan">Jan</option>
                         <option value="Feb">Feb</option>
                         <option value="Mar">Mar</option>
@@ -41,16 +41,29 @@
                     </select>
                 </div>
                 <div>
-                    <table>
-                        <th>Expense</th><th>Value</th>
-                        <tr>
-                            <td><input type="number" name="__desc_1" id="__value_1"></td>
-                            <td><input type="number" name="__desc_2" id="__value_2"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="number" name="__desc_1" id="__value_1"></td>
-                            <td><input type="number" name="__desc_2" id="__value_2"></td>
-                        </tr>
+                    <table id="expensesTable">
+                        <thead>
+                            <tr>
+                                <th>Expense</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody id="expensesTable:body">
+                            <tr>
+                                <td>
+                                    <input id="__desc_0" placeholder="Description" type="text">
+                                </td>
+                                <td>
+                                    <input id="__value_0" placeholder="Amount" type="number">
+                                </td>
+                                <td>
+                                    <button>🚮</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr><td><button id="expenses">+</button></td></tr>
+                        </tfoot>
                     </table>
                 </div>
             </main>
