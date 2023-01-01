@@ -1,0 +1,24 @@
+{
+  "name": "expenses-web",
+  "version": "1.0.0",
+  "description": "<div id='pt-br'>    <details>    <summary>Versão em Português 🇧🇷 (Clique Aqui)</summary>        <h1>Projeto de Despesas</h1> </div>",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnsbriel/expenses-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gnsbriel/expenses-web/issues"
+  },
+  "homepage": "https://github.com/gnsbriel/expenses-web#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
