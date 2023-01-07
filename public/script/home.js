@@ -32,10 +32,9 @@ document.getElementById('add_new_expense').onclick = () => {
             input.placeholder = ('Amount');
             input.type = ('number');
             input.setAttribute('class', '__value_');
-            input.id = (`${cellsId[j]}${tbodyRowCount}`);
-            input.placeholder = (`${cellsPlaceholder[j]}`);
-            input.type = (`${cellsType[j]}`);
-        } else {
+            input.oninput = () => {
+                updateSubTotal();
+            }
         } else if (j == 2) {
             const trash = document.createElement('button');
             cell.appendChild(trash);
