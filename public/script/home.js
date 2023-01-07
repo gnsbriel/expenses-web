@@ -55,6 +55,7 @@ document.getElementById('add_new_expense').onclick = () => {
                         element.id = `${cellsId[j]}${idx}`;
                     });
                 };
+                updateSubTotal();
             };
         };
         row.appendChild(cell);
