@@ -32,6 +32,9 @@ document.getElementById('add_new_expense').onclick = () => {
             trash.textContent = "❌";
             trash.id = (`__trash_${tbodyRowCount}`);
             trash.setAttribute('class', '__trash_');
+            trash.onclick = () => {
+                trash.parentNode.parentNode.parentNode.removeChild(trash.parentNode.parentNode);
+            };
         };
         row.appendChild(cell);
         row.id = (`__row_${tbodyRowCount}`);
