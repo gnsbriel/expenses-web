@@ -1,5 +1,6 @@
 document.getElementById('expenses').onclick = () => {
 
+document.getElementById('add_new_expense').onclick = () => {
     const table = document.getElementById("expensesTable");
     const tableBody = document.getElementById('expensesTable:body');
     const tbodyRowCount = table.tBodies[0].rows.length;
