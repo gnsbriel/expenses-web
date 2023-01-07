@@ -34,6 +34,18 @@ document.getElementById('add_new_expense').onclick = () => {
             trash.setAttribute('class', '__trash_');
             trash.onclick = () => {
                 trash.parentNode.parentNode.parentNode.removeChild(trash.parentNode.parentNode);
+                cellsId = [
+                    '__desc_',
+                    '__value_',
+                    '__trash_',
+                    '__row_',
+                ];
+                for (let j = 0; j < 4; j++) {
+                    var ele = document.getElementsByClassName(`${cellsId[j]}`)
+                    Array.prototype.forEach.call(ele, function(element, idx) {
+                        element.id = `${cellsId[j]}${idx}`;
+                    });
+                };
             };
         };
         row.appendChild(cell);
