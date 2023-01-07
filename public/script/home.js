@@ -1,4 +1,14 @@
-document.getElementById('expenses').onclick = () => {
+function updateSubTotal() {
+    let arr = document.querySelectorAll('.__value_')
+    var total = 0
+
+    for (let i = 0; i < arr.length; i++) {
+        if (parseInt(arr[i].value)) {
+            total += parseInt(arr[i].value);
+        }
+    }
+    document.getElementById('__value_total').value = `R$ ${total.toFixed(2)}`;
+}
 
 document.getElementById('add_new_expense').onclick = () => {
     const table = document.getElementById("expensesTable");
